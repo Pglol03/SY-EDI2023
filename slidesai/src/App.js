@@ -30,7 +30,7 @@ function App() {
   const [prompt, setPrompt] = useState("");
   const [data, setData] = useState([]);
 
-  const API_KEY = "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";
+  const API_KEY = "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";
   const OPENAI_API_ENDPOINT = "https://api.openai.com/v1/completions";
 
   useEffect(() => {
@@ -39,6 +39,7 @@ function App() {
         const response = await axios.post(
           OPENAI_API_ENDPOINT,
           {
+            model: "text-davinci-002",
             prompt: `Subtopics related to ${prompt}`,
             temperature: 0.5,
             max_tokens: 100,
@@ -59,6 +60,7 @@ function App() {
           const descriptionResponse = await axios.post(
             OPENAI_API_ENDPOINT,
             {
+              model: "text-davinci-002",
               prompt: `Describe ${subtopic}`,
               temperature: 0.5,
               max_tokens: 100,
