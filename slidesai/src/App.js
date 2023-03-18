@@ -78,7 +78,7 @@ function App() {
             `https://api.unsplash.com/search/photos?page=1&query=${subtopic}`,
             {
               headers: {
-                Authorization: `Client-ID YOUR_UNSPLASH_API_KEY`,
+                Authorization: `Client-ID 2zWJ-5ZnSXgS_41PAKjAP6lE5TMpZWR2dy6QEUeGvqc`,
               },
             }
           );
