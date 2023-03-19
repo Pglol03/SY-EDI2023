@@ -68,7 +68,7 @@ function App() {
               stop: "\n\n",
             },
             {
-              headers: {
+              headers: {  
                 Authorization: `Bearer ${API_KEY}`,
                 "Content-Type": "application/json",
               },
